@@ -4,6 +4,8 @@
   "description": "Script para la insercion de grandes cantidades de registros",
   "main": "index.js",
   "scripts": {
+    "prod": "./node_modules/.bin/babel-node index.js env=prod",
+    "local": "./node_modules/.bin/babel-node index.js env=local",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -12,5 +14,9 @@
     "csv"
   ],
   "author": "Hector Riquelme",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1"
+  }
 }
